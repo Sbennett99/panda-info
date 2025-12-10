@@ -1,10 +1,8 @@
 
-
 plugins {
-	id 'fabric-loom' 
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
 }
-
 version = project.mod_version
 group = project.maven_group
 
@@ -42,6 +40,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 }
+
 
 processResources {
 	inputs.property "version", project.version
