@@ -58,9 +58,9 @@ public class AnimalInteractionListener implements UseEntityCallback {
         switch (entity) {
             case Panda panda:
                 // From the original Panda Info
-                MutableComponent mainGene = Component.translatable("gui.panda-info.gene." + panda.getMainGene().getSerializedName());
-                MutableComponent hiddenGene = Component.translatable("gui.panda-info.gene." + panda.getHiddenGene().getSerializedName());
-                MutableComponent productGene = Component.translatable("gui.panda-info.gene." + panda.getVariant().getSerializedName());
+                MutableComponent mainGene = Component.translatable("gui.panda-info.gene." + panda.getMainGene().getSerializedName().toUpperCase());
+                MutableComponent hiddenGene = Component.translatable("gui.panda-info.gene." + panda.getHiddenGene().getSerializedName().toUpperCase());
+                MutableComponent productGene = Component.translatable("gui.panda-info.gene." + panda.getVariant().getSerializedName().toUpperCase());
 
                 mainGene = Component.translatable("gui.panda-info.main_gene", "§6", mainGene);
                 hiddenGene = Component.translatable("gui.panda-info.hidden_gene", "§b", hiddenGene);
